@@ -4,45 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>10 D Cafe - Gerugampakkam</title>
+    <title>10 D Cafe - Gerugampakkam | Premium Health Bowls</title>
     <style>
+        /* Modern Scrolling Animation */
         @keyframes scroll {
             0% { transform: translateX(100%); }
             100% { transform: translateX(-100%); }
         }
-        .animate-scroll {
+        .animate-marquee {
+            animation: scroll 15s linear infinite;
             display: inline-block;
             white-space: nowrap;
-            animation: scroll 12s linear infinite;
+        }
+        /* Custom Hover Effect for Cards */
+        .card-premium {
+            transition: all 0.3s ease-in-out;
+        }
+        .card-premium:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
     </style>
 </head>
-<body class="bg-orange-50 font-sans min-h-screen p-4 pb-24 text-gray-800 overflow-x-hidden">
-    <header class="text-center py-6 flex flex-col items-center">
-        <img src="image2_.png" alt="10 D Cafe Logo" class="h-28 w-auto mb-4 drop-shadow-md">
-        <h1 class="text-4xl font-black text-orange-600 tracking-tight">10 D CAFE 🥗</h1>
+<body class="bg-gray-100 font-sans min-h-screen p-4 pb-24 text-gray-900 overflow-x-hidden">
+    <header class="text-center py-8 flex flex-col items-center">
+        <img src="image2_.png" alt="10 D Cafe Logo" class="h-32 w-auto mb-4 drop-shadow-md">
         
-        <a href="https://share.google/Cto0nQ9KsHGBIXFv5" target="_blank" class="mt-4 flex items-center bg-white px-5 py-2 rounded-full shadow-md text-orange-600 hover:scale-105 transition-transform border border-orange-100">
+        <h1 class="text-4xl font-black text-gray-800 tracking-tight text-shadow-sm">10 D CAFE 🥗</h1>
+        
+        <p class="text-gray-600 mt-2 font-medium italic">Your Daily Dose of Healthy Delight</p>
+
+        <a href="https://share.google/Cto0nQ9KsHGBIXFv5" target="_blank" class="mt-4 flex items-center bg-white px-5 py-2 rounded-full shadow-lg text-gray-700 hover:text-orange-600 hover:scale-105 transition-all border border-orange-100">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
-            <span class="font-bold text-sm">Gerugampakkam, Chennai</span>
+            <span class="font-semibold text-sm">Gerugampakkam, Chennai</span>
         </a>
 
-        <div class="w-full bg-red-600 text-white mt-6 py-3 shadow-lg overflow-hidden relative border-y-2 border-yellow-400">
-            <div class="animate-scroll font-black uppercase tracking-widest text-base">
-                🔥 MEGA OFFER: BUY 2 PREMIUM BOX & GET 1 REGULAR BOX FREE! 🥗 HEALTHY FRUITS FOR A HEALTHY LIFE! 🍓 ORDER NOW! 🔥
+        <div class="w-full bg-orange-600 text-white mt-6 py-3 shadow-inner overflow-hidden relative border-y-2 border-orange-200">
+            <div class="animate-marquee font-black uppercase tracking-widest text-base">
+                ⚡ SPECIAL OFFER: Buy any 2 Premium Plans and get 10% Off! 🥗 Fresh Fruits Delivered Daily! 🍓 Contact us for Party Orders! 📞
             </div>
         </div>
     </header>
 
     <main class="max-w-md mx-auto space-y-8 mt-4">
-        <div class="bg-white rounded-3xl shadow-sm border-t-4 border-yellow-400 overflow-hidden">
+        <div class="bg-white rounded-3xl shadow-sm card-premium border-t-8 border-blue-100 overflow-hidden">
             <img src="https://images.unsplash.com/photo-1519996529931-28324d5a630e?q=80&w=400&h=250&auto=format&fit=crop" alt="Basic Plan" class="w-full h-48 object-cover">
             <div class="p-6">
                 <h2 class="text-xl font-bold">Basic Plan</h2>
-                <p class="text-3xl font-black text-orange-500 my-2">₹49</p>
+                <p class="text-3xl font-black text-blue-900 my-2">₹49</p>
                 <ul class="text-gray-500 text-sm mb-6 space-y-1">
                     <li>• Seasonal Fruits Mix</li>
                     <li>• Normal Toppings</li>
@@ -54,13 +66,13 @@
             </div>
         </div>
 
-        <div class="bg-white rounded-3xl shadow-xl border-t-4 border-orange-500 ring-4 ring-orange-100 relative overflow-hidden">
-            <div class="absolute top-0 right-0 bg-orange-500 text-white text-[10px] px-4 py-1 font-bold rounded-bl-xl uppercase tracking-widest">Best Seller</div>
+        <div class="bg-white rounded-3xl shadow-xl card-premium border-t-8 border-orange-500 ring-4 ring-orange-100 relative overflow-hidden">
+            <div class="absolute top-0 right-0 bg-orange-500 text-white text-[10px] px-4 py-1.5 font-bold rounded-bl-xl uppercase tracking-widest shadow-md">Best Seller</div>
             <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?q=80&w=400&h=250&auto=format&fit=crop" alt="Regular Plan" class="w-full h-48 object-cover">
             <div class="p-6">
                 <h2 class="text-xl font-bold">Regular Plan</h2>
-                <p class="text-3xl font-black text-orange-500 my-2">₹119</p>
-                <ul class="text-gray-500 text-sm mb-6 space-y-1">
+                <p class="text-3xl font-black text-orange-600 my-2">₹119</p>
+                <ul class="text-gray-600 text-sm mb-6 space-y-1 font-medium">
                     <li>• Exotic Fruits Included</li>
                     <li>• Honey & Nut Toppings</li>
                 </ul>
@@ -71,11 +83,11 @@
             </div>
         </div>
 
-        <div class="bg-white rounded-3xl shadow-sm border-t-4 border-red-500 overflow-hidden">
+        <div class="bg-white rounded-3xl shadow-sm card-premium border-t-8 border-yellow-500 overflow-hidden">
             <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?q=80&w=400&h=250&auto=format&fit=crop" alt="Premium Plan" class="w-full h-48 object-cover">
             <div class="p-6">
                 <h2 class="text-xl font-bold">Premium Plan</h2>
-                <p class="text-3xl font-black text-orange-500 my-2">₹149</p>
+                <p class="text-3xl font-black text-yellow-600 my-2">₹149</p>
                 <ul class="text-gray-500 text-sm mb-6 space-y-1">
                     <li>• Full Exotic Mix</li>
                     <li>• Dry Fruits & Fresh Cream</li>
@@ -89,15 +101,15 @@
     </main>
 
     <div class="fixed bottom-8 right-6 z-50">
-        <a href="tel:6379133065" class="bg-blue-600 hover:bg-blue-700 text-white p-5 rounded-full shadow-2xl flex items-center justify-center animate-bounce transition-colors border-4 border-white">
+        <a href="tel:6379133065" class="bg-blue-900 hover:bg-blue-950 text-white p-5 rounded-full shadow-2xl flex items-center justify-center animate-bounce transition-colors border-4 border-white">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
         </a>
     </div>
 
-    <footer class="text-center py-12 text-gray-400 text-[10px] tracking-widest uppercase">
-        © 2026 10 D CAFE | Gerugampakkam, Chennai
+    <footer class="text-center py-12 text-gray-500 text-[10px] tracking-widest uppercase border-t border-gray-200 mt-10">
+        © 2026 10 D CAFE | Gerugampakkam, Chennai | Powered by Healthy Delight
     </footer>
 </body>
 </html>
